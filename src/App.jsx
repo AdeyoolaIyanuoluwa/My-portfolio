@@ -9,6 +9,10 @@ import {
   Palette,
   Smartphone,
 } from "lucide-react";
+import Mypicture from './assets/mypicture.jpeg'
+import Beaconhealth from './assets/beaconhealth.png'
+import Creatr from './assets/creatr.png'
+import Portfolio from './assets/portfolio.png'
 import "./index.css";
 
 function App() {
@@ -135,7 +139,7 @@ function App() {
       description:
         "A responsive web application that allows patients to easily book medical tests online. Users can select a test type, choose a nearby diagnostic center, schedule appointments, and receive confirmation instantly. The project focuses on user-friendly design, accessibility, and smooth booking workflows",
       tech: ["React", "TypeScript", "Tailwind CSS", "REST APIs"],
-      image: "src/assets/beaconhealth.png",
+      image: Beaconhealth,
       github: "https://github.com/enyata/mdaas-website",
       live: "https://www.beaconhealth.io/",
     },
@@ -144,7 +148,7 @@ function App() {
       description:
         "Creatr is a web-based application that helps content creators and brands manage their social media presence from one place. It allows users to schedule posts, track engagement, and analyze performance across multiple platforms.",
       tech: ["React", "Redux", "Node.js", "MongoDB"],
-      image:"src/assets/creatr.png",
+      image:Creatr,
       github: "https://github.com/AdeyoolaIyanuoluwa/Creatr",
       live: "#",
     },
@@ -153,7 +157,7 @@ function App() {
       description:
         "Responsive portfolio site with 3D animations and smooth scrolling",
       tech: ["React", "Three.js", "GSAP", "Tailwind CSS"],
-      image:"src/assets/portfolio.png",
+      image:Portfolio,
       github: "https://github.com/AdeyoolaIyanuoluwa/Creatr",
       live: "#",
     },
@@ -215,7 +219,7 @@ function App() {
             <div className="relative">
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-cyan-400 shadow-2xl shadow-cyan-400/20">
                 <img
-                  src="src/assets/mypicture.jpeg"
+                  src={Mypicture}
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
