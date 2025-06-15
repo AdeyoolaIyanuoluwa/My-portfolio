@@ -150,7 +150,7 @@ function App() {
       tech: ["React", "Redux", "Node.js", "MongoDB"],
       image: Creatr,
       github: "https://github.com/AdeyoolaIyanuoluwa/Creatr",
-      live: "#",
+      live: "https://creatr.aeone.co",
     },
     {
       title: "Portfolio Website",
