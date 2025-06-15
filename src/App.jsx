@@ -9,10 +9,10 @@ import {
   Palette,
   Smartphone,
 } from "lucide-react";
-import Mypicture from './assets/mypicture.jpeg'
-import Beaconhealth from './assets/beaconhealth.png'
-import Creatr from './assets/creatr.png'
-import Portfolio from './assets/portfolio.png'
+import Mypicture from "./assets/mypicture.jpeg";
+import Beaconhealth from "./assets/beaconhealth.png";
+import Creatr from "./assets/creatr.png";
+import Portfolio from "./assets/portfolio.png";
 import "./index.css";
 
 function App() {
@@ -148,7 +148,7 @@ function App() {
       description:
         "Creatr is a web-based application that helps content creators and brands manage their social media presence from one place. It allows users to schedule posts, track engagement, and analyze performance across multiple platforms.",
       tech: ["React", "Redux", "Node.js", "MongoDB"],
-      image:Creatr,
+      image: Creatr,
       github: "https://github.com/AdeyoolaIyanuoluwa/Creatr",
       live: "#",
     },
@@ -157,9 +157,9 @@ function App() {
       description:
         "Responsive portfolio site with 3D animations and smooth scrolling",
       tech: ["React", "Three.js", "GSAP", "Tailwind CSS"],
-      image:Portfolio,
-      github: "https://github.com/AdeyoolaIyanuoluwa/Creatr",
-      live: "#",
+      image: Portfolio,
+      github: "https://github.com/AdeyoolaIyanuoluwa/My-portfolio",
+      live: "https://adeyoolaiyanuoluwas-portfolio.vercel.app/",
     },
   ];
 
@@ -186,7 +186,9 @@ function App() {
       <nav className="fixed top-0 left-0 right-0 z-40 bg-gray-900/80 backdrop-blur-sm border-b border-gray-800 ">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-2xl font-bold text-cyan-400">IyanuPortfolio</div>
+            <div className="text-2xl font-bold text-cyan-400">
+              IyanuPortfolio
+            </div>
             <div className="hidden md:flex space-x-8">
               {["home", "about", "skills", "projects", "contact"].map(
                 (item) => (
@@ -330,6 +332,8 @@ function App() {
                   {/* Overlay Links */}
                   <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href={project.github}
                       className="p-3 bg-gray-900/80 backdrop-blur-sm rounded-full text-white hover:text-cyan-400 transition-colors"
                       title="View Code"
@@ -337,6 +341,8 @@ function App() {
                       <Github className="w-6 h-6" />
                     </a>
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href={project.live}
                       className="p-3 bg-gray-900/80 backdrop-blur-sm rounded-full text-white hover:text-cyan-400 transition-colors"
                       title="Live Demo"
