@@ -376,6 +376,8 @@ function App() {
                   {/* Bottom Links */}
                   <div className="flex gap-4 pt-2 border-t border-gray-700">
                     <a
+                    target="_blank"
+                      rel="noopener noreferrer"
                       href={project.github}
                       className="flex items-center gap-2 text-sm text-gray-400 hover:text-cyan-400 transition-colors"
                     >
@@ -383,6 +385,8 @@ function App() {
                       Code
                     </a>
                     <a
+                    target="_blank"
+                      rel="noopener noreferrer"
                       href={project.live}
                       className="flex items-center gap-2 text-sm text-gray-400 hover:text-cyan-400 transition-colors"
                     >
