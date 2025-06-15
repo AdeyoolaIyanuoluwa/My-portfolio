@@ -262,7 +262,7 @@ function App() {
           </h2>
           <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 border border-gray-700">
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              I'm a passionate Frontend Developer with 3 years of experience
+              I'm a passionate Frontend Developer with 3-4 years of experience
               creating engaging, user-friendly web applications. I specialize in
               React ecosystems and modern JavaScript, with a keen eye for design
               and performance optimization.
