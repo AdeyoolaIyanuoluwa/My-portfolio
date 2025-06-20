@@ -7,12 +7,14 @@ import {
   ExternalLink,
   Code,
   Palette,
-  Smartphone,
+  // Smartphone,
 } from "lucide-react";
 import Mypicture from "./assets/mypicture.jpeg";
 import Beaconhealth from "./assets/beaconhealth.png";
 import Creatr from "./assets/creatr.png";
 import Portfolio from "./assets/portfolio.png";
+import Pious from "./assets/piousclock.png";
+import Center from "./assets/center.png";
 import "./index.css";
 
 function App() {
@@ -140,7 +142,7 @@ function App() {
         "A responsive web application that allows patients to easily book medical tests online. Users can select a test type, choose a nearby diagnostic center, schedule appointments, and receive confirmation instantly. The project focuses on user-friendly design, accessibility, and smooth booking workflows",
       tech: ["React", "TypeScript", "Tailwind CSS", "REST APIs"],
       image: Beaconhealth,
-      github: "https://github.com/enyata/mdaas-website",
+      github: "",
       live: "https://www.beaconhealth.io/",
     },
     {
@@ -160,6 +162,24 @@ function App() {
       image: Portfolio,
       github: "https://github.com/AdeyoolaIyanuoluwa/My-portfolio",
       live: "https://adeyoolaiyanuoluwas-portfolio.vercel.app/",
+    },
+    {
+      title: "Pious clock",
+      description:
+        "A web-based application that allows users (e.g., staff, visitors, or assets) to check in and check out of a facility with real-time tracking and management. Built with React js and Node.js, it features role-based access, dashboard reporting, and a clean user experience",
+      tech: ["React", "TypeScript", "SCSS", "Node js"],
+      image: Pious,
+      github: "https://github.com/AdeyoolaIyanuoluwa/piousClock",
+      live: "https://pious-clock.vercel.app",
+    },
+    {
+      title: "Beacon Health – Multi-Center Medical Lab Application",
+      description:
+        "A full-featured web application built for Beacon Health that enables multiple diagnostic centers to track patient activities and maintain accurate medical records. The system provides visibility into operations across all branches, helping staff manage appointments, view patient histories, and streamline lab workflows",
+      tech: ["React", "TypeScript", "SCSS", "Node js"],
+      image: Center,
+      github: "",
+      live: "",
     },
   ];
 
@@ -314,11 +334,11 @@ function App() {
           <h2 className="text-4xl font-bold mb-12 text-center text-cyan-400">
             Featured Projects
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="flex gap-8 overflow-x-auto pb-4 scrollbar-thin scrollbar-track-gray-800 scrollbar-thumb-cyan-400">
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700 hover:border-cyan-400 transition-all duration-300 group hover:scale-105"
+                className="bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700 hover:border-cyan-400 transition-all duration-300 group hover:scale-105 flex-shrink-0 w-full min-w-80 max-w-sm"
               >
                 {/* Project Image */}
                 <div className="relative h-48 overflow-hidden">
@@ -328,7 +348,6 @@ function App() {
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
                   {/* Overlay Links */}
                   <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <a
@@ -351,7 +370,6 @@ function App() {
                     </a>
                   </div>
                 </div>
-
                 {/* Project Content */}
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-3 text-white group-hover:text-cyan-400 transition-colors">
@@ -360,7 +378,6 @@ function App() {
                   <p className="text-gray-300 mb-4 leading-relaxed text-sm">
                     {project.description}
                   </p>
-
                   {/* Tech Stack */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech) => (
@@ -372,11 +389,10 @@ function App() {
                       </span>
                     ))}
                   </div>
-
                   {/* Bottom Links */}
                   <div className="flex gap-4 pt-2 border-t border-gray-700">
                     <a
-                    target="_blank"
+                      target="_blank"
                       rel="noopener noreferrer"
                       href={project.github}
                       className="flex items-center gap-2 text-sm text-gray-400 hover:text-cyan-400 transition-colors"
@@ -385,7 +401,7 @@ function App() {
                       Code
                     </a>
                     <a
-                    target="_blank"
+                      target="_blank"
                       rel="noopener noreferrer"
                       href={project.live}
                       className="flex items-center gap-2 text-sm text-gray-400 hover:text-cyan-400 transition-colors"
