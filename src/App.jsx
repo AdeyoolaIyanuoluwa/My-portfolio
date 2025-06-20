@@ -164,15 +164,6 @@ function App() {
       live: "https://adeyoolaiyanuoluwas-portfolio.vercel.app/",
     },
     {
-      title: "Pious clock",
-      description:
-        "A web-based application that allows users (e.g., staff, visitors, or assets) to check in and check out of a facility with real-time tracking and management. Built with React js and Node.js, it features role-based access, dashboard reporting, and a clean user experience",
-      tech: ["React", "TypeScript", "SCSS", "Node js"],
-      image: Pious,
-      github: "https://github.com/AdeyoolaIyanuoluwa/piousClock",
-      live: "https://pious-clock.vercel.app",
-    },
-    {
       title: "Beacon Health – Multi-Center Medical Lab Application",
       description:
         "A full-featured web application built for Beacon Health that enables multiple diagnostic centers to track patient activities and maintain accurate medical records. The system provides visibility into operations across all branches, helping staff manage appointments, view patient histories, and streamline lab workflows",
@@ -180,6 +171,15 @@ function App() {
       image: Center,
       github: "",
       live: "",
+    },
+      {
+      title: "Pious clock",
+      description:
+        "A web-based application that allows users (e.g., staff, visitors, or assets) to check in and check out of a facility with real-time tracking and management. Built with React js and Node.js, it features role-based access, dashboard reporting, and a clean user experience",
+      tech: ["React", "TypeScript", "SCSS", "Node js"],
+      image: Pious,
+      github: "https://github.com/AdeyoolaIyanuoluwa/piousClock",
+      live: "https://pious-clock.vercel.app",
     },
   ];
 
