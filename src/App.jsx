@@ -15,6 +15,7 @@ import Creatr from "./assets/creatr.png";
 import Portfolio from "./assets/portfolio.png";
 import Pious from "./assets/piousclock.png";
 import Center from "./assets/center.png";
+import Digidokita from "./assets/digidokita.png";
 import "./index.css";
 
 function App() {
@@ -128,6 +129,7 @@ function App() {
     { name: "Tailwind CSS", level: 85, icon: <Palette className="w-6 h-6" /> },
     { name: "Node.js", level: 75, icon: <Code className="w-6 h-6" /> },
     { name: "Next.js", level: 82, icon: <Code className="w-6 h-6" /> },
+    { name: "Python", level: 65, icon: <Code className="w-6 h-6" /> },
     // {
     //   name: "Mobile First",
     //   level: 90,
@@ -136,6 +138,15 @@ function App() {
   ];
 
   const projects = [
+    {
+      title: "Digidokita",
+      description:
+      "Developed a telemedicine app with an AI medical assistant for symptom assessment and guidance. Users can schedule appointments, view doctors, and join secure real-time video consultations with chat, powered by WebRTC. The platform improves consultation readiness and enhances user experience.",
+      tech: ["Python", "React", "TypeScript", "Tailwind CSS", "REST APIs"],
+      image: Digidokita,
+      github: "",
+      live: "",
+    },
     {
       title: "BeaconHealth",
       description:
@@ -172,7 +183,7 @@ function App() {
       github: "",
       live: "",
     },
-      {
+    {
       title: "Pious clock",
       description:
         "A web-based application that allows users (e.g., staff, visitors, or assets) to check in and check out of a facility with real-time tracking and management. Built with React js and Node.js, it features role-based access, dashboard reporting, and a clean user experience",
