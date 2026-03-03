@@ -16,6 +16,7 @@ import Portfolio from "./assets/portfolio.png";
 import Pious from "./assets/piousclock.png";
 import Center from "./assets/center.png";
 import Digidokita from "./assets/digidokita.png";
+import Hazel from "./assets/hazel.png";
 import "./index.css";
 
 function App() {
@@ -139,6 +140,15 @@ function App() {
 
   const projects = [
     {
+      title: "Hazel AI",
+      description:
+      "An AI-assisted digital clinic frontend designed to improve care quality, continuity, and operational efficiency by combining guided clinical documentation, role-specific workflows, and centralized patient intelligence in one interface.",
+      tech: ["Python","Gemini", "React", "TypeScript", "Tailwind CSS", "REST APIs"],
+      image: Hazel,
+      github: "",
+      live: "https://gohazel.ai/",
+    },
+    {
       title: "Digidokita",
       description:
       "Developed a telemedicine app with an AI medical assistant for symptom assessment and guidance. Users can schedule appointments, view doctors, and join secure real-time video consultations with chat, powered by WebRTC. The platform improves consultation readiness and enhances user experience.",
@@ -187,7 +197,7 @@ function App() {
       title: "Pious clock",
       description:
         "A web-based application that allows users (e.g., staff, visitors, or assets) to check in and check out of a facility with real-time tracking and management. Built with React js and Node.js, it features role-based access, dashboard reporting, and a clean user experience",
-      tech: ["React", "TypeScript", "SCSS", "Node js"],
+      tech: ["Angular", "TypeScript", "SCSS", "Node js"],
       image: Pious,
       github: "https://github.com/AdeyoolaIyanuoluwa/piousClock",
       live: "https://pious-clock.vercel.app",
