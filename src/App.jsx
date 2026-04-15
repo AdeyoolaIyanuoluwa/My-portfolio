@@ -188,7 +188,7 @@ function App() {
       title: "Beacon Health – Multi-Center Medical Lab Application",
       description:
         "A full-featured web application built for Beacon Health that enables multiple diagnostic centers to track patient activities and maintain accurate medical records. The system provides visibility into operations across all branches, helping staff manage appointments, view patient histories, and streamline lab workflows",
-      tech: ["React", "TypeScript", "SCSS", "Node js"],
+      tech: ["React", "Redux", "TypeScript", "SCSS", "Node js"],
       image: Center,
       github: "",
       live: "",
